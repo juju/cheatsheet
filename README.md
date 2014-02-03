@@ -62,7 +62,7 @@ juju debug-hooks - debug mode for charm writing, this will ssh you into the unit
 
 ## Useful LXC commands
 
-`lxc-ls --fancy` - show all the containers on your machine
+`sudo lxc-ls --fancy` - show all the containers on your machine
 
 # Odd plugins that exist and aren't really documented or packaged anywhere
 
