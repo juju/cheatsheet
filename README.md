@@ -22,6 +22,7 @@ juju deploy $servicename $alias- deploy a service, alias is optional if you want
 - `juju status servicename` - shows you what's going for a particular server
 - `juju ssh servicename/machine#` - ssh to a unit, get the # from juju status
 - `juju ssh machine#` - ssh to a machine number
+- `juju run "uname -a" --all` - Run a command (uname) on every instance. (1.17.2 and newer)
 
 ## bundles
 
