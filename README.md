@@ -43,6 +43,7 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 
 - `charm create foo` - create a blank charm template
 - `charm add tests` - add tests to an existing charm
+- `charm test -e $environment` - executes all tests found in the charm tests directory in specified environment (amazon, hp, etc.).
 - `charm add readme` - add a readme template to an existing charm
 - `charm proof` - lint for charms
 - `bundle proof` - lint for bundles
