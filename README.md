@@ -11,7 +11,7 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 
 ## Using Juju
 
-juju deploy $servicename $alias- deploy a service, alias is optional if you want to name it something. If you use aliases you need to refer to the service via the alias from then on:
+- `juju deploy $servicename $alias`- deploy a service, alias is optional if you want to name it something. If you use aliases you need to refer to the service via the alias from then on:
 
                 juju deploy mediawiki myawesomewiki
 
@@ -46,8 +46,7 @@ juju deploy $servicename $alias- deploy a service, alias is optional if you want
 - `charm add readme` - add a readme template to an existing charm
 - `charm proof` - lint for charms
 - `bundle proof` - lint for bundles
-
-juju debug-hooks - debug mode for charm writing, this will ssh you into the units and fire off a tmux session to debug (totally awesome, use this). 
+- `juju debug-hooks` - debug mode for charm writing, this will ssh you into the units and fire off a tmux session to debug (totally awesome, use this). 
 
 ## Clean up
 
