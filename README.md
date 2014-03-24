@@ -33,6 +33,13 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 - `juju add-relation $service1 $service2` - relate two services
 - `juju destroy-relation $service1 $service2` - unrelate 2 services
 
+## Deploying to Containers, VMs, and metal
+
+- `juju deploy servicename --to lxc:10` - Deploy service to a container on machine #10
+- `juju deploy servicename --to kvm:10` - Deploy service to a KVM on machine #10
+- `juju deploy servicename --to 10` - Deploy service to the raw bare metal on machine #10
+
+
 ## Destroying Stuff
 
 - `juju destroy-environment $environment-name` - destroy an environment
