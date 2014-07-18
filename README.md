@@ -38,6 +38,7 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 - `juju deploy servicename --to lxc:10` - Deploy service to a container on machine #10
 - `juju deploy servicename --to kvm:10` - Deploy service to a KVM on machine #10
 - `juju deploy servicename --to 10` - Deploy service to the raw bare metal on machine #10
+- `juju deploy servicename --constraints instance-type=m1.small` - Deploy to certain AWS types. 
 
 
 ## Destroying Stuff
@@ -66,6 +67,7 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 - `juju status -e $environmentname` - show me the status of another environment
 - `juju switch $environmentname` - switch to a different environment
 - `juju add-machine` - add a blank machine that you can mess with
+- `juju ensure-availability` - Ensures the state server is HA (+3 nodes) - you only really need this in production.
 
 ## Useful LXC commands
 
