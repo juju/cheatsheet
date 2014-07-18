@@ -11,13 +11,13 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 
 ## Using Juju
 
-- `juju deploy $servicename $alias`- deploy a service, alias is optional if you want to name it something. If you use aliases you need to refer to the service via the alias from then on:
+- `juju deploy servicename alias`- deploy a service, alias is optional if you want to name it something. If you use aliases you need to refer to the service via the alias from then on:
 
                 juju deploy mediawiki myawesomewiki
 
-- `juju add-unit $servicename` - add a unit
-- `juju add-unit -n 10 $servicename` - add 10 units.
-- `juju deploy $servicename --to #` - deploy servicename to a specific machine #. Use 0 to deploy to the bootstrap node.
+- `juju add-unit servicename` - add a unit
+- `juju add-unit -n 10 servicename` - add 10 units.
+- `juju deploy servicename --to #` - deploy servicename to a specific machine #. Use 0 to deploy to the bootstrap node.
 - `juju status` - shows what's going on
 - `juju status servicename` - shows you what's going for a particular server
 - `juju ssh servicename/machine#` - ssh to a unit, get the # from juju status
