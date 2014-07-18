@@ -71,7 +71,18 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 
 `sudo lxc-ls --fancy` - show all the containers on your machine
 
-# Odd plugins that exist and aren't really documented or packaged anywhere
+## Plugins
 
+Install plugins:
 
+    git clone https://github.com/juju/plugins.git ~/.juju-plugins
+    echo 'PATH=$PATH:$HOME/.juju-plugins' >> ~/.bash_profile
+    source ~/.bash_profile
+    juju help plugins
+
+Plugin Cheats:
+
+- `juju pprint` - prettier status, a must for large deployments
+- `juju clean` - reset and clean all LXC containers and the Juju local provider
+- `juju git-deploy https://github.com/charms/haproxy` - Deploy charms directly from a git repo. 
 
