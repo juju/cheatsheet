@@ -1,6 +1,6 @@
 # Juju Cheatsheet
 
-Sometimes you don't have all day to figure stuff out, here's a TLDR of how to use Juju:
+Sometimes you don't have all day to figure stuff out, here's a TLDR of how to use Juju. Remember you can always `juju help` and then any of these subcommands to get the help for the command. 
 
 ## Installing the PPA and all the goodies:
 
@@ -39,6 +39,12 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 - `juju deploy servicename --to kvm:10` - Deploy service to a KVM on machine #10
 - `juju deploy servicename --to 10` - Deploy service to the raw bare metal on machine #10
 - `juju deploy servicename --constraints instance-type=m1.small` - Deploy to certain AWS types. 
+
+## Working with Units
+
+- `juju ssh servicename/#` - ssh to a specific machine # for a service.
+- `juju run --service servicename "uname -a"` - run a command on all machines of a service and return results to the console (useful!)
+- `juju scp file.sh servicename/0:/tmp` - copy file.sh to /tmp on node 0 of servicename.
 
 
 ## Destroying Stuff
