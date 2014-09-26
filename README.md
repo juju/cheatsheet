@@ -4,7 +4,7 @@ Sometimes you don't have all day to figure stuff out, here's a TLDR of how to us
 
 ## Installing the PPA and all the goodies:
 
-- `sudo add-apt-repository ppa:juju-stable && sudo apt-get update && sudo apt-get install juju juju-local juju-quickstart charm-tools`
+- `sudo add-apt-repository ppa:juju/stable && sudo apt-get update && sudo apt-get install juju juju-local juju-quickstart charm-tools`
 - `juju quickstart -i` - prompts you for all your cloud credentials. 
 - `juju bootstrap -v` - bootstrap a node (always -v so you can see what's going on, drop the -v when you get comfortable with juju, but juju bootstrap since 1.17.0 shows what's going on -v is really verbose at this point)
 - `juju debug-log` - open this in another terminal or tab, so you can see what juju is doing while you type other commands)
